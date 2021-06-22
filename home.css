@@ -1,0 +1,23 @@
+.content{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 11.4rem 1fr;
+    grid-template-areas: 
+    'header header'
+    'left right';
+    border: 2px solid red;
+}header{
+    grid-area: header;
+    display: inline;
+    height: fit-content;  
+}#bg{
+    grid-area: left;
+    background: url('/assets/home-bg-img.png') no-repeat top/contain;
+}main{
+    grid-area: right;
+    display: flex;
+}main.container{
+    width: min(3.3rem 100%);
+}main h2{
+    font-family: 'Poppins';
+}
